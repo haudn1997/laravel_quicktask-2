@@ -11,11 +11,6 @@
 |
 */
 
-
-
-/**
- * Show Task Dashboard
- */
 Route::get('/{lang?}', 'TasksController@index')->name('lang');
 
 Route::resource('/tasks','TasksController',['names'=>
